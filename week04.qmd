@@ -1,7 +1,7 @@
 ---
 title: "STAT1379/COMP6179: ST4DS"
-subtitle: "Week 4 SGTA: Student template"
-author: "Your Name Here"
+subtitle: "Week 4 SGTA: 48853054"
+author: "Shibani Parui"
 execute:
   echo: true
   eval: true
@@ -53,7 +53,10 @@ str(x)
 - Why might `typeof()` give different results?
 
 *Write your thoughts here:*
-
+typeof() shows internal storage, class() shows object class
+R stores numbers as doubles by default
+The : operator creates integers
+c() combines values into a vector
 
 
 #### Atomic Vectors - Integers  
@@ -348,6 +351,7 @@ Download the `test.csv` file from iLearn and place it in a `data` subfolder with
 
 ```{r loading-data, eval=FALSE}
 # Load CSV file
+#install.packages("here")
 here::here("data", "test.csv") # Check the path first
 x <- read_csv(file = here::here("data", "test.csv"))
 str(x)
